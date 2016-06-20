@@ -1,0 +1,17 @@
+<div style="padding: 20px">
+  <h2>Menus</h2>
+
+  <div>
+    <div ng-repeat="menu in vm.menus">
+      <span>{{menu.name}}</span>
+
+      <div ng-repeat="category in menu.categories" style="padding-left: 20px;">
+        <span>- {{category.name}}</span>
+
+        <div ng-repeat="menuItem in category.menuItems" style="padding-left: 20px;">
+          <span>- {{menuItem.name}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
